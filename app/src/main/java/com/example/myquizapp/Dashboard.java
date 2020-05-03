@@ -9,27 +9,34 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.myquizapp.Football_part.Football;
+import com.example.myquizapp.Technology.Technologies_qsn;
 
 public class Dashboard extends AppCompatActivity implements  View.OnClickListener{
 
     Button btn;
-    ImageView sports;
+    ImageView tech,sports;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
        // btn = (Button) findViewById(R.id.football_id);
-        sports=(ImageView)findViewById(R.id.sports_id); sports.setOnClickListener(this);
-
+        sports=(ImageView)findViewById(R.id.t_sports_id); sports.setOnClickListener(this);
+        tech=(ImageView)findViewById(R.id.tech_id); tech.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.sports_id:
+            case R.id.t_sports_id:
                 Intent i = new Intent(Dashboard.this, Football.class);
+               // i.putExtra("catagory","A");
                 startActivity(i);
+                break;
+            case R.id.tech_id:
+                Intent i2 = new Intent(Dashboard.this, Technologies_qsn.class);
+                i2.putExtra("catagory","B");
+                startActivity(i2);
                 break;
         }
     }

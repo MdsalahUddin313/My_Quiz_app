@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Football_part.ResultActivity"></activity>
+        <activity android:name=".Technology.Technologies_qsn"></activity>
+        <activity android:name=".Football_part.ResultActivity" />
         <activity android:name=".Football_part.fquiz" />
         <activity
             android:name=".Football_part.Football"

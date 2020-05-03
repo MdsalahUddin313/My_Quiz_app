@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.myquizapp.Dashboard;
 import com.example.myquizapp.R;
+import com.example.myquizapp.Technology.Technologies_qsn;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -24,18 +25,36 @@ public class ResultActivity extends AppCompatActivity {
         tv3 = (TextView)findViewById(R.id.tvres3);
         btnRestart = (Button) findViewById(R.id.btnRestart);
 
-        StringBuffer sb = new StringBuffer();
-        sb.append("Correct answers: " + fquiz.correct + "\n");
-        StringBuffer sb2 = new StringBuffer();
-        sb2.append("Wrong Answers: " + fquiz.wrong + "\n");
-        StringBuffer sb3 = new StringBuffer();
-        sb3.append("Final Score: " + fquiz.correct + "\n");
-        tv.setText(sb);
-        tv2.setText(sb2);
-        tv3.setText(sb3);
 
-        fquiz.correct=0;
-        fquiz.wrong=0;
+
+
+        if(fquiz.correct>0 && fquiz.wrong>0 && fquiz.correct>0) {
+            StringBuffer sb = new StringBuffer();
+            sb.append("Correct answers: " + fquiz.correct + "\n");
+            StringBuffer sb2 = new StringBuffer();
+            sb2.append("Wrong Answers: " + fquiz.wrong + "\n");
+            StringBuffer sb3 = new StringBuffer();
+            sb3.append("Final Score: " + fquiz.correct + "\n");
+
+            tv.setText(sb);
+            tv2.setText(sb2);
+            tv3.setText(sb3);
+            fquiz.correct=0;
+            fquiz.wrong=0;
+
+        }else if(Technologies_qsn.t_correct>0 &&Technologies_qsn.t_wrong>0&&Technologies_qsn.t_correct>0) {
+            StringBuffer sb4 = new StringBuffer();
+            sb4.append("Correct answers: " + Technologies_qsn.t_correct + "\n");
+            StringBuffer sb5 = new StringBuffer();
+            sb5.append("Wrong Answers: " + Technologies_qsn.t_wrong + "\n");
+            StringBuffer sb6 = new StringBuffer();
+            sb6.append("Final Score: " + Technologies_qsn.t_correct + "\n");
+            tv.setText(sb4);
+            tv2.setText(sb5);
+            tv3.setText(sb6);
+            Technologies_qsn.t_correct=0;
+            Technologies_qsn.t_wrong=0;
+        }
 
         btnRestart.setOnClickListener(new View.OnClickListener() {
             @Override

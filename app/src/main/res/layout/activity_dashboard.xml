@@ -67,7 +67,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/sports_id"
+                android:id="@+id/t_sports_id"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:src="@drawable/sports" />
@@ -83,6 +83,7 @@
                 android:src="@drawable/physics" />
 
             <ImageView
+                android:id="@+id/tech_id"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:src="@drawable/tech" />
