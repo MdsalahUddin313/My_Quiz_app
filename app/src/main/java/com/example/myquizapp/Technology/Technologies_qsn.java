@@ -94,11 +94,11 @@ public class Technologies_qsn extends AppCompatActivity {
         Intent intent = getIntent();
         String name = intent.getStringExtra("catagory");
         if(name=="B"){
-             flag=0;
-            last_position=9;
-        }else if(name=="C"){
-            flag=10;
+             flag=10;
             last_position=19;
+        }else if(name=="C"){
+            flag=20;
+            last_position=29;
         }
 
         submitbutton = (Button) findViewById(R.id.t_nextQSn_id);
@@ -141,7 +141,7 @@ public class Technologies_qsn extends AppCompatActivity {
                 if (score != null)
                     score.setText("" + t_correct);
 
-                if (flag < questions.length||flag<last_position) {
+                if (flag < questions.length||flag==last_position) {
                     tv.setText(questions[flag]);
                     rb1.setText(opt[flag * 4]);
                     rb2.setText(opt[flag * 4 + 1]);
