@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myquizapp.Login_part.Login_page;
+
 public class MainActivity extends AppCompatActivity {
 
     Button button;
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MainActivity.this,Dashboard.class);
+                Intent i=new Intent(MainActivity.this, Login_page.class);
                 startActivity(i);
             }
         });
