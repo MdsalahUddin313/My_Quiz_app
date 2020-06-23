@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.myquizapp.Football_part.Football;
+//import com.example.myquizapp.Football_part.Football;
 import com.example.myquizapp.Technology.Technologies_qsn;
 
 public class Dashboard extends AppCompatActivity implements  View.OnClickListener{
@@ -29,9 +29,9 @@ public class Dashboard extends AppCompatActivity implements  View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.t_sports_id:
-                Intent i = new Intent(Dashboard.this, Football.class);
+                //Intent i = new Intent(Dashboard.this, Football.class);
                // i.putExtra("catagory","A");
-                startActivity(i);
+                //startActivity(i);
                 break;
             case R.id.tech_id:
                 Intent i2 = new Intent(Dashboard.this, Technologies_qsn.class);

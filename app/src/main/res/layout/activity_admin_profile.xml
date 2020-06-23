@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_others"
+    tools:context=".Authintication.Admin_profile">
+
+    <ImageView
+        android:id="@+id/Company_logo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/play"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/first_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@drawable/transparent_background"
+        android:layout_below="@+id/Company_logo_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/profile_image_id"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:transitionName="imagename"
+            android:background="@drawable/person_images">
+
+        </ImageView>
+
+        <TextView
+            android:transitionName="name"
+            android:id="@+id/Name_person_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/profile_image_id"
+            android:paddingLeft="15dp"
+            android:text="John Doe"
+            android:textSize="35dp"></TextView>
+
+        <TextView
+            android:transitionName="Descriptionname"
+            android:id="@+id/Description_person_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name_person_id"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/profile_image_id"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="He is a professional killer"></TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_layout_id"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginBottom="67dp"
+        android:textColor="#075873"
+        android:text="Click your profile for more details"></TextView>
+</RelativeLayout>

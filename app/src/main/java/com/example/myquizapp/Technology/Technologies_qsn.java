@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myquizapp.Football_part.ResultActivity;
+
 import com.example.myquizapp.R;
 
 public class Technologies_qsn extends AppCompatActivity {

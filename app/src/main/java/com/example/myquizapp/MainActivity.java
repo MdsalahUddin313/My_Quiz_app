@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.myquizapp.Login_part.Login_page;
+import com.example.myquizapp.Authintication.Admin_profile;
+import com.example.myquizapp.Authintication.LoginActivity;
+import com.example.myquizapp.Question_And_Answer.Quiz;
+
+//import com.example.myquizapp.Login_part.Login_page;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MainActivity.this, Login_page.class);
+                Intent i=new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });
