@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.myquizapp.Firebase_retrive_books.Admin_profile;
 import com.example.myquizapp.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i2= new Intent(LoginActivity.this,Admin_profile.class);
+                Intent i2= new Intent(LoginActivity.this, Admin_profile.class);
                 startActivity(i2);
             }
         });

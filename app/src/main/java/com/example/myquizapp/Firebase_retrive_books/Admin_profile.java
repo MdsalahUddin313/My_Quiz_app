@@ -1,4 +1,4 @@
-package com.example.myquizapp.Authintication;
+package com.example.myquizapp.Firebase_retrive_books;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.myquizapp.Authintication.shared_profile;
 import com.example.myquizapp.R;
 
 public class Admin_profile extends AppCompatActivity {

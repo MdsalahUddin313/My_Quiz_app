@@ -9,19 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Authintication.shared_profile"
-            android:theme="@style/NoAction_bar"></activity>
-        <activity android:name=".Authintication.Admin_profile"
-            android:theme="@style/NoAction_bar"/>
+        <activity android:name=".Firebase_retrive_books.Firebase_upload_pdf"></activity>
+        <activity android:name=".Firebase_retrive_books.Firebase_dashboard" />
+        <activity android:name=".Tutorial.Tutorials_offline_" />
+        <activity android:name=".Question_And_Answer.Result_calculation" />
+        <activity android:name=".Question_And_Answer.Quiz_part" />
+        <activity
+            android:name=".Authintication.shared_profile"
+            android:theme="@style/NoAction_bar" />
+        <activity
+            android:name=".Authintication.Admin_profile"
+            android:theme="@style/NoAction_bar" />
         <activity
             android:name=".Authintication.Register_activity"
             android:theme="@style/NoAction_bar" />
         <activity
             android:name=".Authintication.LoginActivity"
             android:theme="@style/NoAction_bar" />
-        <activity android:name=".Question_And_Answer.StartingScreenActivity" />
-        <activity android:name=".Question_And_Answer.Quiz" />
-        <activity android:name=".Technology.Technologies_qsn" />
         <activity
             android:name=".Dashboard"
             android:parentActivityName=".MainActivity" />

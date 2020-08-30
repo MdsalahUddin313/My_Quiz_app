@@ -3,16 +3,14 @@ package com.example.myquizapp.SQLITE;
 import android.provider.BaseColumns;
 
 public class QuizContract {
-
-    private QuizContract() {
-    }
-
-    public static class QuestionsTable implements BaseColumns {
-        public static final String TABLE_NAME = "quiz_questions";
-        public static final String COLUMN_QUESTION = "question";
-        public static final String COLUMN_OPTION1 = "option1";
-        public static final String COLUMN_OPTION2 = "option2";
-        public static final String COLUMN_OPTION3 = "option3";
-        public static final String COLUMN_ANSWER_NR = "answer_nr";
+    public static class MovieEntry implements BaseColumns {
+        public static final String TABLE_QUEST = "quest";
+        // tasks Table Columns names
+        public static final String KEY_ID = "id";
+        public static final String KEY_QUES = "question";
+        public static final String KEY_ANSWER = "answer"; //correct option
+        public static final String KEY_OPTA= "opta"; //option a
+        public static final String KEY_OPTB= "optb"; //option b
+        public static final String KEY_OPTC= "optc"; //option c
     }
 }

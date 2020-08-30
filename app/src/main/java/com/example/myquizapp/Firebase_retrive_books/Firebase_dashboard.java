@@ -1,16 +1,16 @@
-package com.example.myquizapp.Technology;
-
-import android.os.Bundle;
+package com.example.myquizapp.Firebase_retrive_books;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+
 import com.example.myquizapp.R;
 
-public class ResultActivity extends AppCompatActivity {
+public class Firebase_dashboard extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_technologies_qsn);
-
+        setContentView(R.layout.activity_firebase_dashboard);
     }
 }

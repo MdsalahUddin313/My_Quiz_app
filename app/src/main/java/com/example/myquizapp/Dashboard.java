@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 //import com.example.myquizapp.Football_part.Football;
-import com.example.myquizapp.Technology.Technologies_qsn;
+
 
 public class Dashboard extends AppCompatActivity implements  View.OnClickListener{
 
@@ -34,9 +34,9 @@ public class Dashboard extends AppCompatActivity implements  View.OnClickListene
                 //startActivity(i);
                 break;
             case R.id.tech_id:
-                Intent i2 = new Intent(Dashboard.this, Technologies_qsn.class);
-                i2.putExtra("catagory","B");
-                startActivity(i2);
+//                Intent i2 = new Intent(Dashboard.this, Technologies_qsn.class);
+//                i2.putExtra("catagory","B");
+//                startActivity(i2);
                 break;
         }
     }
